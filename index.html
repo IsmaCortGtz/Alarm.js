@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm JS</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css">
+
+    <script src="scripts/getMusic.js"></script>
+    <script src="Alarm.js"></script>
+    <script src="scripts/index.js" defer></script>
+  </head>
+
+  <body>
+    <h1 class="page-title">Alarm JS</h1>
+
+    <div class="options">
+      <div class="volume-container option-container">
+        <input type="range" value="100" id="volumeInput" name="volume" min="0" max="200">
+        <span class="volume-label">Volume (Gain): <span id="voulume-span">100%</span></span>
+      </div>
+
+      <div class="loop-container option-container">
+        <span class="option-label">Play in loop</span>
+        <input type="checkbox" class="loop-input" id="loopInput" checked>
+      </div>
+
+      <div class="wave-container option-container">
+        <span class="option-label">Type of oscillator wave</span>
+        <select class="wave-input" id="waveValue">
+          <option value="sine">Sine</option>
+          <option value="square">Square</option>
+          <option value="sawtooth">Sawtooth</option>
+          <option value="triangle">Triangle</option>
+        </select>
+      </div>
+
+      <p class="save-button" id="saveButton">Save settings</p>
+    </div>
+
+    <div class="buttons-container">
+      <span id="playButton" class="play-button media-button"><i class="material-icons">play_arrow</i></span>
+      <span id="stopButton" class="stop-button media-button"><i class="material-icons">stop</i></span>
+    </div>
+
+  </body>
+</html>
